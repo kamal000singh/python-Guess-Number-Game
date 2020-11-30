@@ -1,15 +1,14 @@
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
 name2 = input("What is their name? \n")
-name1=name1.lower()
-name2=name2.lower()
-c1=name1.count("t")+name1.count("r")+name1.count("u")+name1.count("e")+name2.count("t")+name2.count("r")+name2.count("u")+name2.count("e")
-c2=name1.count("l")+name1.count("o")+name1.count("v")+name1.count("e")+name2.count("l")+name2.count("o")+name2.count("v")+name2.count("e")
-c=str(c1)+str(c2)
-s=int(c)
-if(s>40 and s<50):
-  print(f"Your score is {s}, you are alright together.")
-elif(s<10 or s>90):
-  print(f"Your score is {s}, you go together like coke and mentos.")
+cmb_string=name1+name2
+cmb_string=cmb_string.lower()
+true=cmb_string.count("t")+cmb_string.count("r")+cmb_string.count("u")+cmb_string.count("e")
+love=cmb_string.count("l")+cmb_string.count("o")+cmb_string.count("v")+cmb_string.count("e")
+love_score=int(str(true)+str(love))
+if(love_score>40 and love_score<50):
+  print(f"Your love score is {love_score}, you are alright together.")
+elif(love_score<10 or love_score>90):
+  print(f"Your love score is {love_score}, you go together like coke and mentos.")
 else:
-  print(f"Your score is {c}.")
+  print(f"Your love score is {love_score}.")
